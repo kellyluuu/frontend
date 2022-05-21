@@ -9,14 +9,14 @@ function Projects (props){
     }
     useEffect(()=>getProjectsData(),[])
     const loaded = ()=>{
-        return projects.map((project)=>(
-        <div>
+        return projects.map((project, index)=>(
+        <div key={index}>
             <h1>{project.name}</h1>
             <img src={project.image} alt="img" />
             <a href={project.git}>
             <button>Github</button>
             </a>
-             <a href={project.live}>
+         <a href={project.live}>
           <button>live site</button>
         </a>
       </div>
