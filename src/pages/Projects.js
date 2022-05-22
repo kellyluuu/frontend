@@ -9,10 +9,11 @@ function Projects (props){
     }
     useEffect(()=>{getProjectsData()},[])
     const loaded = ()=>{
-        return projects.map((project, index)=>(
-        <div key={index}>
+        return <div className="project-cards">{
+        projects.map((project, index)=>(
+        <div className="card" key={index}>
             <h1>{project.name}</h1>
-            <img style={ {width: "200px"}}src={project.image} alt="img" />
+            <img src={project.image} alt="img" />
             <a href={project.git}>
             <button>Github</button>
             </a>
@@ -21,6 +22,7 @@ function Projects (props){
         </a>
       </div>
         ))
+    }</div>
     }
     return projects ? loaded() : <h1> Loading...</h1>
 }
