@@ -12,7 +12,7 @@ function Projects (props){
         return projects.map((project, index)=>(
         <div key={index}>
             <h1>{project.name}</h1>
-            <img src={project.image} alt="img" />
+            <img style={ {width: "200px"}}src={project.image} alt="img" />
             <a href={project.git}>
             <button>Github</button>
             </a>

@@ -1,4 +1,5 @@
-import "./App.css";
+//import "./App.css";
+import "./bootstrap.css"
 
 // IMPORT COMPONENTS
 import Header from "./components/Header";
