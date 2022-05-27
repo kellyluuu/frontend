@@ -18,11 +18,18 @@ function About(props) {
   useEffect(() => {getAboutData()}, []);
 
   // define a function that will return the JSX needed once we get the data
+
   const loaded = () => (
     <div>
-      <h2>{about.name}</h2>
+    <div className="card text-white bg-primary mb-3" style={{width: "20rem"}} >
+      <div className="card-header">
+        <h2 className="card-title">{about.name}</h2>
+      </div>
+      <div className="card-body">
       <h3>{about.email}</h3>
-      <p>{about.bio}</p>
+      <p class="card-text">{about.bio}</p>
+      </div>
+    </div>
     </div>
   );
 
