@@ -12,8 +12,8 @@ function Projects (props){
         return <div className="project-cards">{
         projects.map((project, index)=>(
         <div className="card" key={index}>
-            <h1>{project.name}</h1>
-            <img src={project.image} alt="img" />
+            <h3>{project.name}</h3>
+            <img className="img-card-size" src={project.image} alt="img" />
             <a href={project.git}>
             <button>Github</button>
             </a>
