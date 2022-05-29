@@ -15,10 +15,10 @@ function Projects (props){
             <h3>{project.name}</h3>
             <img className="img-card-size" src={project.image} alt="img" />
             <a href={project.git}>
-            <button>Github</button>
+            <button type="button" className="btn btn-info">Github</button>
             </a>
          <a href={project.live}>
-          <button>live site</button>
+          <button type="button" className="btn btn-info">live site</button>
         </a>
       </div>
         ))
